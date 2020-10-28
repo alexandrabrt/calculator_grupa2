@@ -30,18 +30,42 @@
 
 
 def adunare(numar1: int, numar2: int) -> int:
+    """
+
+    :param numar1: Primul numar introdus de la tastatura
+    :param numar2: Al doilea numar introdus de la tastatura
+    :return: Suma celor doua numere
+    """
     return numar1 + numar2
 
 
 def scadere(numar1: int, numar2: int) -> int:
+    """
+
+    :param numar1: Primul numar introdus de la tastatura
+    :param numar2: Al doilea numar introdus de la tastatura
+    :return: Diferenta celor doua numere
+    """
     return numar1 - numar2
 
 
 def inmultire(numar1: int, numar2: int) -> int:
+    """
+
+    :param numar1: Primul numar introdus de la tastatura
+    :param numar2: Al doilea numar introdus de la tastatura
+    :return: Inmultirea celor doua numere
+    """
     return numar1 * numar2
 
 
 def impartire(numar1: int, numar2: int) -> float:
+    """
+
+    :param numar1: Primul numar introdus de la tastatura
+    :param numar2: Al doilea numar introdus de la tastatura
+    :return: Impartirea celor doua numere
+    """
     return numar1 / numar2
 
 
