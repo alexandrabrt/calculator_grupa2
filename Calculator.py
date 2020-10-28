@@ -69,11 +69,8 @@ def impartire(numar1: int, numar2: int) -> float:
     return numar1 / numar2
 
 
-
-
-
-def main():
-    global rezultat
+def main() -> float:
+    rezultat = None
     numar_ales_1 = int(input("Introduceti primul numar: "))
     numar_ales_2 = int(input("Introduceti al doilea numar: "))
     operatia = input("Selectati operatia dorita: ")
@@ -83,13 +80,8 @@ def main():
         rezultat = scadere(numar_ales_1, numar_ales_2)
     elif operatia == "*":
         rezultat = inmultire(numar_ales_1, numar_ales_2)
-    elif operatia == "/":
-        if numar_ales_2 == 0:
-
-            rezultat = None
-        else:
-
-            rezultat = impartire(numar_ales_1, numar_ales_2)
+    elif operatia == "/" and numar_ales_2 != 0:
+        rezultat = impartire(numar_ales_1, numar_ales_2)
 
     return rezultat
 
@@ -98,7 +90,7 @@ continua = 'DA'
 while continua == 'DA':
 
     a = main()
-    if a == None:
+    if a is None:
         print("Nu se poate realiza impartirea la zero ")
     else:
         print(a)
